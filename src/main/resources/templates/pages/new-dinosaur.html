@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" th:href="@{/style.css}">
+</head>
+<body>
+
+<div th:insert="fragments/_header :: header"></div>
+
+<h2>Newly Discovered Dinosaur</h2>
+<img class="left" th:src="@{/img/newdino.jpg}" alt="Newly Discovered Dinosaur">
+
+<p> Here is an image of a newly discovered Dinosaur. It is new, and was just recently discovered.</p>
+
+<div th:insert="fragments/_footer :: footer"></div>
+</body>
+</html>
